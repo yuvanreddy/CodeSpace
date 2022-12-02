@@ -2,7 +2,7 @@
 
 rm -rf results.csv
 rm -rf report.txt
-filename='data.txt'
+filename=$1
 while read line; 
 do 
 curl --url "https://www.virustotal.com/vtapi/v2/url/report?apikey=c285ae41bd905acff2b39d68a626e7721986d3ba0e6fa1effdb696fbaa922d69&resource=${line}" > report.txt

@@ -8,7 +8,7 @@ pipeline {
         } 
      stage('Hello'){
        steps {
-         sh 'python vir_total.py'
+         sh 'python3.7 vir_total.py'
          }
       }
    }

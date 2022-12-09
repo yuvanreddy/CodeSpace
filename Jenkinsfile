@@ -3,12 +3,12 @@ pipeline {
     stages {
      stage('Version'){
        steps {
-         sh 'python3 --version'
+         sh 'python --version'
          }
         } 
      stage('Hello'){
        steps {
-         sh 'python3 vir_total.py'
+         sh 'python vir_total.py'
          }
       }
    }
